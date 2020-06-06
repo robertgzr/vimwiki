@@ -89,7 +89,7 @@ let s:markdown_syntax.rxPreEnd = '\%(`\{3,}\|\~\{3,}\)'
 let s:markdown_syntax.rxMathStart = '\$\$'
 let s:markdown_syntax.rxMathEnd = '\$\$'
 
-let s:markdown_syntax.rxComment = '^\s*%%.*$\|<!--[^>]*-->'
+let s:markdown_syntax.rxComment = '^\s*%%.*$\|^>\s.*$\|<!--[^>]*-->'
 let s:markdown_syntax.rxTags = '\%(^\|\s\)\@<=:\%([^:[:space:]]\+:\)\+\%(\s\|$\)\@='
 
 let s:markdown_syntax.header_search = '^\s*\(#\{1,6}\)\([^#].*\)$'
